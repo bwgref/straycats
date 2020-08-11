@@ -99,7 +99,7 @@ tstart = fits.Column(name='TIME', format='E', array = arr[:, 10])
 tend = fits.Column(name='TIME_END', format='E', array = arr[:, 11])
 notes = fits.Column(name='NOTES', format='30A', array = arr[:, 9])
 
-hdu = fits.BinTableHDU.from_columns([classification, target, obsid, mod, primary, exposure, ra, dec, tstart, tend, notes])
+hdu = fits.BinTableHDU.from_columns([classification, target,ttype, obsid, mod, primary, exposure, ra, dec, tstart, tend, notes])
 hdu.writeto('fits/straycats.fits', overwrite=True)
 
 # FIN
