@@ -1,0 +1,6 @@
+First, download the table from the Google Drive into CSV files in the csv directory
+
+Second, grab the latest numaster.fits table and put it in the fits subdirectory
+
+Then just run python parse_and_merge.py which produces the straycats.fits file in the fits subdirectory
+
