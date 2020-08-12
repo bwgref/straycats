@@ -79,27 +79,28 @@ for target, ttype in zip(obj_type['Confirmed Sources'], obj_type['Type']):
     
 df2.loc[df2['SL Target'] == '??', 'Classification'] = 'Unk'
 
+# Convert back to a FITS table and write this out
+tab = Table.from_pandas(df2)
+tab.write('fits/straycats.fits', overwrite=True)
+# # Now convert to FITS table with this horrible hack around:
+# arr = df2.to_numpy()
 
+# # Make the columns the silly way here:
 
-# Now convert to FITS table with this horrible hack around:
-arr = df2.to_numpy()
+# classification = fits.Column(name='CLASSIFICATION', format='10A', array=arr[:, 0])
+# target = fits.Column(name='SL_SOURCE', format='10A', array=arr[:,1])
+# ttype = fits.Column(name='TYPE', format='4A', array=arr[:,2])
+# obsid = fits.Column(name='OBSID', format='12A', array=arr[:,3])
+# mod = fits.Column(name='MODULE', format='2A', array=arr[:,4])
+# primary = fits.Column(name='PRIMARY_TARGET', format = '30A', array=arr[:,5])
+# exposure = fits.Column(name='EXPOSURE', format = 'E', array=[float(e) for e in arr[:,6]])
+# ra = fits.Column(name='RA', format='E', array =  arr[:, 7])
+# dec = fits.Column(name='DEC', format='E', array =  arr[:, 8])
+# tstart = fits.Column(name='TIME', format='E', array = arr[:, 10])
+# tend = fits.Column(name='TIME_END', format='E', array = arr[:, 11])
+# notes = fits.Column(name='NOTES', format='30A', array = arr[:, 9])
 
-# Make the columns the silly way here:
+# hdu = fits.BinTableHDU.from_columns([classification, target,ttype, obsid, mod, primary, exposure, ra, dec, tstart, tend, notes])
+# hdu.writeto('fits/straycats.fits', overwrite=True)
 
-classification = fits.Column(name='CLASSIFICATION', format='10A', array=arr[:, 0])
-target = fits.Column(name='SL_SOURCE', format='10A', array=arr[:,1])
-ttype = fits.Column(name='TYPE', format='4A', array=arr[:,2])
-obsid = fits.Column(name='OBSID', format='12A', array=arr[:,3])
-mod = fits.Column(name='MODULE', format='2A', array=arr[:,4])
-primary = fits.Column(name='PRIMARY_TARGET', format = '30A', array=arr[:,5])
-exposure = fits.Column(name='EXPOSURE', format = 'E', array=[float(e) for e in arr[:,6]])
-ra = fits.Column(name='RA', format='E', array =  arr[:, 7])
-dec = fits.Column(name='DEC', format='E', array =  arr[:, 8])
-tstart = fits.Column(name='TIME', format='E', array = arr[:, 10])
-tend = fits.Column(name='TIME_END', format='E', array = arr[:, 11])
-notes = fits.Column(name='NOTES', format='30A', array = arr[:, 9])
-
-hdu = fits.BinTableHDU.from_columns([classification, target,ttype, obsid, mod, primary, exposure, ra, dec, tstart, tend, notes])
-hdu.writeto('fits/straycats.fits', overwrite=True)
-
-# FIN
+# # FIN
