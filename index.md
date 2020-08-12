@@ -3,5 +3,7 @@
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://bwgref.github.io/straycats/straycat_galactic.html" height="525" width="100%"></iframe>
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://bwgref.github.io/straycats/straycat_radec.html" height="525" width="100%"></iframe>
+
 
 
