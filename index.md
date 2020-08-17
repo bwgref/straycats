@@ -53,7 +53,3 @@ The Google docs will remain the underlying source of the information. So as we i
 ### Use the 'Zoom' tool to manipulate this image rather than the "Box Select" tool.
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://bwgref.github.io/straycats/plotly_figs/galaxy_overlay.html" height="525" width="100%"></iframe>
 
-
-
-<iframe id="igraph" scrolling="yes" seamless="seamless" src="https://bwgref.github.io/straycats/tables/straycats_table.html" height="525" width="100%"></iframe>
- 
