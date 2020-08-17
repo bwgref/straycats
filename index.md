@@ -3,12 +3,12 @@
 
 ## The current version of the FITS table can be found [here](https://github.com/bwgref/straycats/blob/master/straycats.fits)
 
-## An interactive version of the table can be found [here](./tables/straycat_table)
+## An interactive version of the table can be found [here](straycat_table)
 
 
 ### The columns are:
 
-1. Classifictation
+1. Classification
 
     As of now, either SL (for confirmed stray light source) or ??. In the future also include GR (for Ghost Rays from source just outside of the FoV), Faint, etc.
   
