@@ -1,3 +1,9 @@
+---
+layout: page
+title: Straycats
+permalink: /table/
+---
+
 | SL Target               | Target Type   | SEQID                                                                                                         | Primary Target         |   Exposure (s) |       RA |      DEC | Notes                                        |
 |:------------------------|:--------------|:--------------------------------------------------------------------------------------------------------------|:-----------------------|---------------:|---------:|---------:|:---------------------------------------------|
 | 2MASX J09172716-6456271 | AGN           | <a href="./https://github.com/bwgref/straycats/tree/master/web_resources/seqid/60401020002" >60401020002 </a> | IRAS_09149m6206        |      110899    | 138.979  | -62.3074 | SL on both                                   |
