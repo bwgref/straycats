@@ -1,26 +1,35 @@
-Confirmed Sources,Type,Notes,,,,,Type Key,
-2MASX J09172716-6456271,AGN,,,,,,AGN,
-3C 273,AGN,,,,,,HMXB-BH,High Mass X-ray Binary with BH compact object
-4U 0614+091,LMXB-NS,UCXB,,,,,HMXB-NS,High Mass X-ray Binary with NS compact object
-4U 1323-619,LMXB-NS,dipping and bursting,,,,,HMXB,"High Mass X-ray Binary, unknown compact object"
-4U 1538-522,HMXB-NS,"Pulsar, Cyclotron feature above 20 keV",,,,,LMXB-BH,Low Mass X-ray Binary with BH compact object
-4U 1608-522,LMXB-NS,transient with yearly outbursts,,,,,LMXB-NS,Low Mass X-ray Binary with NS compact object
-4U 1630-47,BHC,Recurring outbursts,,,,,LMXB,"Low Mass X-ray Binary, unknown compact object"
-4U 1636-536,LMXB-NS,Atoll,,,,,PWNe,Pulsar Wind Nebula
-4U 1700-377,HMXB-BH,"Transient BH source, SFXT candidate?",,,,,BHC,"Black Hole Candidate, unknown companion"
-4U 1702-429,LMXB-NS,Atoll,,,,,NS,Neutron Starm unknown companion
-4U 1705-44,LMXB-NS,Atoll,,,,,Edit above as necessary...,
-4U 1724-30,LMXB-NS,"Should be 4U 1722-30, XB or GRS 1724-30, located in Terzan 2",,,,,,
+SL Target,Type,Notes,,,,,Type Key,
+1RXSJ180408.9-342058   ,LMXB-NS,,,,,,AGN,
+2MASX J09172716-6456271,AGN,,,,,,HMXB-BH,High Mass X-ray Binary with BH compact object
+3C 273,AGN,,,,,,HMXB-NS,High Mass X-ray Binary with NS compact object
+4U 0614+091,LMXB-NS,UCXB,,,,,HMXB,"High Mass X-ray Binary, unknown compact object"
+4U 1323-619,LMXB-NS,dipping and bursting,,,,,LMXB-BH,Low Mass X-ray Binary with BH compact object
+4U 1538-522,HMXB-NS,"Pulsar, Cyclotron feature above 20 keV",,,,,LMXB-NS,Low Mass X-ray Binary with NS compact object
+4U 1608-522,LMXB-NS,transient with yearly outbursts,,,,,LMXB,"Low Mass X-ray Binary, unknown compact object"
+4U 1624-490,Eclipsing pulsar,"a.k.a ""The Big Dipper""",,,,,PWNe,Pulsar Wind Nebula
+4U 1630-47,BHC,Recurring outbursts,,,,,BHC,"Black Hole Candidate, unknown companion"
+4U 1636-536,LMXB-NS,Atoll,,,,,Edit above as necessary...,
+4U 1700-377,HMXB-BH,"Transient BH source, SFXT candidate?",,,,,,
+4U 1702-429,LMXB-NS,Atoll,,,,,Will need to add a 'SIMBAD' column for things that have a bad name in them,
+4U 1705-44,LMXB-NS,Atoll,,,,,,
+4U 1708-40,LMXB-NS,Type 1 X-ray Bursts,,,,,,
+4U 1722-30,LMXB-NS,"Should be 4U 1722-30, XB or GRS 1724-30, located in Terzan 2",,,,,,
+4U 1746-370,LMXB-NS,May actually be 1A 1744-361 instead? See https://ui.adsabs.harvard.edu/abs/2013ATel.5301....1B/abstract,,,,,,
 4U 1820-303,LMXB-NS,"atoll, UCXB",,,,,,
 4U 1822-371,LMXB-NS,"pulsar, eclipsing binary",,,,,,
 A 1145.1-6141,HMXB-NS,"pulsar, AKA 1E 1145.1-6141",,,,,,
+Cas A,SNR,,,,,,,
 Cen X-3,HMXB-NS,X-ray pulsar,,,,,,
+Cep X-4,HMXB-NS,Cylcotron lines,,,,,,
 Crab,PWNe,Crab SL,,,,,,
 Crab GR,PWNe,Crab Ghost Rays,,,,,,
 Cyg X-1,HMXB-BH,,,,,,,
 Cyg X-3,HMXB-BH,,,,,,,
+EXO 1846-031,BHC,,,,,,,
 EXO 2030+375,HMXB-NS,Transient accreting pulsar (Be/X-ray binary with Type I X-ray bursts during periastron passages),,,,,,
+GRS 1758-258,BHC,,,,,,,
 GRS 1915+105,LMXB-BH,Transient BH source,,,,,,
+GS 1716-249,BHC,a.k.a. GRS 1716-249,,,,,,
 GS 1826-24,LMXB-NS,Known for type 1 X-ray bursts,,,,,,
 GX 1+4,LMXB-NS,pulsar,,,,,,
 GX 13+1,LMXB-NS,"Atoll, disk winds",,,,,,
@@ -29,28 +38,37 @@ GX 3+1,LMXB-NS,Atoll,,,,,,
 GX 301-2,HMXB-NS,"pulsar, AKA 4U 1223-62",,,,,,
 GX 340+0,LMXB-NS,"Z-track, disk winds",,,,,,
 GX 349+2,LMXB-NS,Z-track,,,,,,
+GX 354+0,LMXB-NS,"a.k.a. 4U 1728-34, Type 1 X-ray bursts",,,,,,
 GX 5-1,LMXB-NS,Z-track,,,,,,
 GX 9+1,LMXB-NS,Atoll,,,,,,
 GX 9+9,LMXB-NS,Atoll,,,,,,
+H1417-624,HMXB-NS,"Be X-ray binary, outburst in 2019, 17.54 s, 42 day period",,,,,,
+H1705-440 ,LMXB-NS,Atoll,,,,,,
 IC 4329A,AGN,,,,,,,
 IGR 16320-4751,HMXB-NS,pulsar,,,,,,
-IGR J16318-4848? ,HMXB-?,highly obscurred XRB,,,,,,
 IGR J17464-3213,BHC,,,,,,,
 IGR J21247+5058,Radio galaxy,,,,,,,
+IGRJ17498-2921,LMXB-BH,,,,,,,
+IGRJ17511-3057   ,LMXB-NS,Millisecond pulsar?! 2015 outburst,,,,,,
 LMC X-3,LMXB-BH,,,,,,,
 LMC X-4,NS,Pulsar,,,,,,
 M1812-12,LMXB-NS,,,,,,,
 MAXI J1348,BHC,Transient,,,,,,
 MAXI J1535,BHC,Transient,,,,,,
+MAXI J1631-479,BHC,"See http://www.astronomerstelegram.org/?read=12320 Originally listed as AXJ1631.9-4752, actually MAXI J1631-479?",,,,,,
 MAXI J1820,BHC,Transient,,,,,,
+NGC 1275,AGN,,,,,,,
 NGC 4151,AGN,,,,,,,
 NGC 4388,AGN,,,,,,,
 OAO 1657-415,HMXB-NS,"pulsar, eclipsing",,,,,,
 PSR 1509-58,PWNe,Hand of God puslar,,,,,,
+Rapid Burster,NS,,,,,,,
 RX J0053.8-7226,HMXB-NS,"Be/X-ray binary, pulsar (in the SMC)",,,,,,
+SAX J1808.4-3658,LMXB-NS,Millisecond pulsar,,,,,,
 SLX 1735-259,LMXB,UCXB,,,,,,
 SLX 1744-299,LMXB-NS,,,,,,,
+SMC X-1,HMXB-NS,Pulsar,,,,,,
 SS 433,HMXB-BH,ULX candidate,,,,,,
 X1908+075,HMXB-NS,AKA 4U 1909+07,,,,,,
-XTE J1550-564?,BHC,"transient, microquasar",,,,,,
 XTE J1855-026,HMXB-NS,"pulsar, eclipsing",,,,,,
+XTE J1701-407 ,,Actually Swift J1701-4050? ,,,,,,

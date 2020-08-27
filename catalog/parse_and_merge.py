@@ -20,6 +20,8 @@ for col in df.columns:
 # Drop everything with NaN in the SL Target column
 df = df.dropna(subset=['SL Target'])
 
+df = df.rename(columns={"Exposure (s)": "Exposure"})
+
 # Add the MJD start/stop from numaster and figure out if you're public or not
 
 # Set the "public" cutoff date to be June 1, 2020
@@ -43,8 +45,11 @@ dn['PUBLIC'] = np.where((dn['PUBLIC_DATE']<cutoff_mjd)&(dn['PUBLIC_DATE'] > 0), 
 
 
 # Add MJD start/stop times
-df['TIME'] = [-1. for x in range(len(df['SEQID']))]
-df['END_TIME'] = [-1. for x in range(len(df['SEQID']))]
+init_times = [-1. for x in range(len(df['SEQID']))]
+df.insert(loc=4, column='TIME', value=init_times)
+df.insert(loc=5, column='END_TIME', value=init_times)
+
+#df['END_TIME'] = [-1. for x in range(len(df['SEQID']))]
 
 for si in np.unique(df['SEQID']):
 #    print(dn.loc[dn['OBSID'] == si, 'TIME'].values[0])
@@ -54,7 +59,7 @@ for si in np.unique(df['SEQID']):
 
 # Collate in the object type information
 obj_type = pd.read_csv('csv/target_info.csv')
-green_list = ['Confirmed Sources', 'Type']
+green_list = ['SL Target', 'Type']
 for col in obj_type.columns:
     if col not in green_list:
         if col in obj_type.columns:
@@ -74,10 +79,35 @@ targ_type= ['??' for x in range(nrows) ]
 df2.insert(loc=0, column='Classification', value=classification)
 df2.insert(loc=2, column='Target Type', value=targ_type)
 
-for target, ttype in zip(obj_type['Confirmed Sources'], obj_type['Type']):
+for target, ttype in zip(obj_type['SL Target'], obj_type['Type']):
     df2.loc[df2['SL Target'] == target, 'Target Type'] = ttype
-    
+
+# Catch the classifications here    
 df2.loc[df2['SL Target'] == '??', 'Classification'] = 'Unk'
+## Reset SL Targets to ?? here for each class of object where things aren't clear:
+
+for id in ['Unkn', 'Complex', 'Faint', 'GR']:
+    df2.loc[df2['SL Target'] == id, 'Classification'] = id
+    df2.loc[df2['SL Target'] == id, 'SL Target'] = '??'
+
+
+
+# Add a flag to identify sequences with multiple SL sources
+count = df2['SEQID'].value_counts()
+
+multi = ['N' for x in range(nrows) ]
+df2.insert(loc=5, column='Multi', value=multi)
+
+for seq in count.keys():
+    if count[seq] > 1:
+        this_seq =df2[df2['SEQID'] == seq]
+        mods = this_seq['Module'].value_counts()
+        for mod in mods.keys():
+            if mods[mod] > 1:
+                df2.loc[(df2['SEQID'] == seq) & (df2['Module'] == mod), 'Multi'] = 'Y'
+    
+    
+
 
 # Convert back to a FITS table and write this out
 tab = Table.from_pandas(df2)
