@@ -2,15 +2,9 @@
 
 ## The current version of the FITS table can be found [here](tables/straycats.fits)
 
----
-
 ## An HTML version of the table can be found [here](tables/straycats_table) for known SL sources
 
----
-
 ## An HTML version of the table for unidentified SL sources is [here](tables/straycats_table_unknowns)
-
----
 
 ### The columns of the FITS file are:
 
