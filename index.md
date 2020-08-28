@@ -1,16 +1,27 @@
-# StrayCats
-
+# StrayCats: The *NuSTAR* Straylight source Catalog
 
 ## The current version of the FITS table can be found [here](tables/straycats.fits)
 
-## An interactive version of the table can be found [here](tables/straycats_table)
+---
 
+## An HTML version of the table can be found [here](tables/straycats_table) for known SL sources
 
-### The columns are:
+---
+
+## An HTML version of the table for unidentified SL sources is [here](tables/straycats_table_unknowns)
+
+---
+
+### The columns of the FITS file are:
 
 1. Classification
 
-    As of now, either SL (for confirmed stray light source) or ??. In the future also include GR (for Ghost Rays from source just outside of the FoV), Faint, etc.
+   The classifications are:
+   1. 'SL': Identified stray light source
+   2. 'Complex': Multiple overlapping SL sources are present, difficult to analyze)
+   3. 'Faint': Potential faint stray light
+   4. 'GR': Ghost-rays from a source just outside of the FoV
+   5. 'Unkn': Stray light from an unidentified source
   
 2. SL Target
 
@@ -40,14 +51,19 @@
 
     Any notes for the SL observation (probably to be removed at some point).
 
+--- 
+
 ### Update plan
 
 The Google docs will remain the underlying source of the information. So as we identify more of the unidentified SL sources we'll update those tables, dump them to CSV files, and then regenrated the FITS version of the catalog.
 
+--- 
 
 ## Sky distribution of SL sources
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://bwgref.github.io/straycats/plotly_figs/straycat_radec.html" height="540" width="960"></iframe>
+
+--- 
 
 ## Galactic distribution of SL sources. Underlying image is the [ESO Milky Way panorama](https://www.eso.org/public/images/eso0932a/)
 ### Use the 'Zoom' tool to manipulate this image rather than the "Box Select" tool.
