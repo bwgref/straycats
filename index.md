@@ -1,7 +1,7 @@
 # StrayCats
 
 
-## The current version of the FITS table can be found [here](https://github.com/bwgref/straycats/blob/master/straycats.fits)
+## The current version of the FITS table can be found [here](tables/straycats.fits)
 
 ## An interactive version of the table can be found [here](tables/straycats_table)
 
