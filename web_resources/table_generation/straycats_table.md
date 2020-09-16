@@ -509,6 +509,38 @@
 | SMC X-1                 | HMXB-NS          | 90102014004 | SMC_X2                 | 57307.9 |   23058.9  |  13.7443 | -73.695  | Strong SL (SMC source?)                                              |
 | SMC X-1                 | HMXB-NS          | 90201030002 | SWIFT_J003233d6m7306   | 57586.7 |   54923.7  |   8.1969 | -73.0956 | Corner SL                                                            |
 | SS 433                  | HMXB-BH          | 40401003002 | 3C_397                 | 58628.6 |  132005    | 286.87   |   7.2104 | Single in B, multiple in A                                           |
+| LMC X-3                 | LMXB-BH          | 10002008001 | LMC_X4                 | 56112.5 |   39948.9  |  83.2027 | -66.3476 | Weaker SL                                                            |
+| LMC X-2                 | LMXB-NS          | 10601407002 | N132D                  | 58921.4 |   82687.4  |  81.1972 | -69.6945 | Strong on FPMA only, some LMC source                                 |
+| LMC X-2                 | LMXB-NS          | 40001014002 | SN1987A                | 56177.9 |   68833.9  |  84.0136 | -69.2271 | LMC stray light. X-4 on A, corner unknown on B                       |
+| LMC X-2                 | LMXB-NS          | 40001014003 | SN1987A                | 56178.9 |  136301    |  83.9595 | -69.2378 | LMC SL                                                               |
+| LMC X-2                 | LMXB-NS          | 40001014004 | SN1987A                | 56181.1 |  198871    |  83.9378 | -69.2448 | LMC SL                                                               |
+| LMC X-2                 | LMXB-NS          | 40001014006 | SN1987A                | 56220.8 |   53897.1  |  83.9614 | -69.2641 | Edge of FoV SL                                                       |
+| LMC X-2                 | LMXB-NS          | 40001014007 | SN1987A                | 56221.8 |  199713    |  83.9182 | -69.2714 | Edge of FoV SL                                                       |
+| LMC X-2                 | LMXB-NS          | 40001014009 | SN1987A                | 56273.1 |   28420.7  |  83.8272 | -69.2803 | Corner SL                                                            |
+| LMC X-2                 | LMXB-NS          | 40001014010 | SN1987A                | 56273.7 |  186034    |  83.9274 | -69.2928 | Corner SL                                                            |
+| LMC X-2                 | LMXB-NS          | 40001014012 | SN1987A                | 56471.8 |   19309.8  |  83.8251 | -69.2257 | Corner SL                                                            |
+| LMC X-2                 | LMXB-NS          | 40001014012 | SN1987A                | 56471.8 |   19309.8  |  83.8251 | -69.2257 | Corner SL                                                            |
+| LMC X-2                 | LMXB-NS          | 40001014013 | SN1987A                | 56472.1 |  472871    |  83.8281 | -69.2465 | Corner Unknown on both                                               |
+| LMC X-2                 | LMXB-NS          | 40001014013 | SN1987A                | 56472.1 |  472871    |  83.8281 | -69.2465 | Corner Unknown on both                                               |
+| LMC X-2                 | LMXB-NS          | 40001014015 | SN1987A                | 56768.5 |   96838.4  |  83.8384 | -69.2617 | Unknown bottom edge on A                                             |
+| LMC X-2                 | LMXB-NS          | 40001014016 | SN1987A                | 56769.9 |  431823    |  83.7759 | -69.2677 | Unknown bottom edge on A                                             |
+| LMC X-2                 | LMXB-NS          | 40001014018 | SN1987A                | 56823.4 |  200197    |  83.7686 | -69.2335 | Unknown on both                                                      |
+| LMC X-2                 | LMXB-NS          | 40001014018 | SN1987A                | 56823.4 |  200197    |  83.7686 | -69.2335 | Unknown on both                                                      |
+| LMC X-2                 | LMXB-NS          | 40001014020 | SN1987A                | 56827.9 |  275192    |  83.8186 | -69.2489 | Unknown on both                                                      |
+| LMC X-2                 | LMXB-NS          | 40001014020 | SN1987A                | 56827.9 |  275192    |  83.8186 | -69.2489 | Unknown on both                                                      |
+| LMC X-2                 | LMXB-NS          | 40001014022 | SN1987A                | 56870.3 |   47879.8  |  83.8562 | -69.2213 | LMC X-4 on A, known edge on both                                     |
+| LMC X-2                 | LMXB-NS          | 40001014022 | SN1987A                | 56870.3 |   47879.8  |  83.8562 | -69.2213 | LMC X-4 on A, known edge on both                                     |
+| LMC X-2                 | LMXB-NS          | 40001014023 | SN1987A                | 56871   |  427616    |  83.8965 | -69.2477 | LMC X-4 on A, known edge on both                                     |
+| LMC X-2                 | LMXB-NS          | 40001014023 | SN1987A                | 56871   |  427616    |  83.8965 | -69.2477 | LMC X-4 on A, known edge on both                                     |
+| LMC X-2                 | LMXB-NS          | 40101010002 | N132D                  | 57366.2 |   69000.2  |  81.3115 | -69.6661 | LMC sources, strong unknown on B                                     |
+| LMC X-2                 | LMXB-NS          | 40101015002 | 30_Dor_C               | 57268   |  166674    |  84.0242 | -69.2058 | Extended source, SN1987A + unknown on both SL (mismatch)             |
+| LMC X-2                 | LMXB-NS          | 40101015002 | 30_Dor_C               | 57268   |  166674    |  84.0242 | -69.2058 | LMC sources, second point source                                     |
+| LMC X-2                 | LMXB-NS          | 40101015004 | 30_Dor_C               | 57313.7 |   26018.4  |  83.9813 | -69.2073 | LMC sources, faint on edge of B, second point source                 |
+| LMC X-2                 | LMXB-NS          | 40201014002 | N157B                  | 57678.6 |  104805    |  84.5049 | -69.1593 | Multiple point sources, Edge SL on B, faint LMC X-2                  |
+| LMC X-2                 | LMXB-NS          | 40501004002 | SN1987A                | 58983   |  183446    |  83.766  | -69.2728 | Unknown on both                                                      |
+| LMC X-2                 | LMXB-NS          | 40501004002 | SN1987A                | 58983   |  183446    |  83.766  | -69.2728 | Unknown on both                                                      |
+| LMC X-2                 | LMXB-NS          | 40501004004 | SN1987A                | 58996.4 |  159322    |  83.7612 | -69.2682 | LMC SL                                                               |
+| LMC X-2                 | LMXB-NS          | 40501004004 | SN1987A                | 58996.4 |  159322    |  83.7612 | -69.2682 | LMC sources                                                          |
 | X1908+075               | HMXB-NS          | 30002041002 | SS433                  | 56934.1 |   26728.4  | 287.947  |   4.963  | SL on B                                                              |
 | X1908+075               | HMXB-NS          | 30401018002 | 4U_1907p09             | 58331.5 |   78859.8  | 287.366  |   9.8237 | Weak SL (strong on B)                                                |
 | X1908+075               | HMXB-NS          | 30401018002 | 4U_1907p09             | 58331.5 |   78859.8  | 287.366  |   9.8237 | Strong SL (weak in A)                                                |
