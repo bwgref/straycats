@@ -541,6 +541,8 @@
 | LMC X-2                 | LMXB-NS          | 40501004002 | SN1987A                | 58983   |  183446    |  83.766  | -69.2728 | Unknown on both                                                      |
 | LMC X-2                 | LMXB-NS          | 40501004004 | SN1987A                | 58996.4 |  159322    |  83.7612 | -69.2682 | LMC SL                                                               |
 | LMC X-2                 | LMXB-NS          | 40501004004 | SN1987A                | 58996.4 |  159322    |  83.7612 | -69.2682 | LMC sources                                                          |
+| MAXI J1621              | LMXB-NS          | 80401321002 | 4U_1608m52             | 58311.9 |   53741.5  | 243.174  | -52.464  | Unident source in both                                               |
+| MAXI J1621              | LMXB-NS          | 80401321002 | 4U_1608m52             | 58311.9 |   53741.5  | 243.174  | -52.464  | Unident source in both                                               |
 | Cir X-1                 | LMXB-NS          | 90501314002 | MAXI_J1535m571         | 58587.5 |   52710.9  | 233.884  | -57.2154 | Strong SL (some in A), unidentified                                  |
 | Cir X-1                 | LMXB-NS          | 90501314002 | MAXI_J1535m571         | 58587.5 |   52710.9  | 233.884  | -57.2154 | Strong SL (some in A), unidentified                                  |
 | X1908+075               | HMXB-NS          | 30002041002 | SS433                  | 56934.1 |   26728.4  | 287.947  |   4.963  | SL on B                                                              |
