@@ -107,7 +107,9 @@ for seq in count.keys():
                 df2.loc[(df2['SEQID'] == seq) & (df2['Module'] == mod), 'Multi'] = 'Y'
     
     
+# Alpha sort on SL target name:
 
+df2.sort_values(by=['SL Target'], axis=0, inplace=True)
 
 # Convert back to a FITS table and write this out
 tab = Table.from_pandas(df2)
