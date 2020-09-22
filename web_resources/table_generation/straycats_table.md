@@ -511,6 +511,9 @@
 | SS 433                  | HMXB-BH          | 40401003002 | 3C_397                 | 58628.6 |  132005    | 286.87   |   7.2104 | Single in B, multiple in A                                           |
 | LMC X-3                 | LMXB-BH          | 10002008001 | LMC_X4                 | 56112.5 |   39948.9  |  83.2027 | -66.3476 | Weaker SL                                                            |
 | LMC X-2                 | LMXB-NS          | 10601407002 | N132D                  | 58921.4 |   82687.4  |  81.1972 | -69.6945 | Strong on FPMA only, some LMC source                                 |
+| SAXJ1806.5-2215         | LMXB-NS          | 30102038006 | SGR_1806m20            | 57253.6 |   31180.2  | 272.157  | -20.4304 | SAX J1806 on A?                                                      |
+| GX 9+1                  | LMXB-NS          | 30102038006 | SGR_1806m20            | 57253.6 |   31180.2  | 272.157  | -20.4304 | Corner (GX 13+1) and GX 9+1 on B mismatch with model                 |
+| GX 9+1                  | LMXB-NS          | 30102038007 | SGR_1806m20            | 57338   |   11017    | 272.139  | -20.4009 | Corner (GX 13+1) and GX 9+1 on B mismatch with model                 |
 | LMC X-2                 | LMXB-NS          | 40001014002 | SN1987A                | 56177.9 |   68833.9  |  84.0136 | -69.2271 | LMC stray light. X-4 on A, corner unknown on B                       |
 | LMC X-2                 | LMXB-NS          | 40001014003 | SN1987A                | 56178.9 |  136301    |  83.9595 | -69.2378 | LMC SL                                                               |
 | LMC X-2                 | LMXB-NS          | 40001014004 | SN1987A                | 56181.1 |  198871    |  83.9378 | -69.2448 | LMC SL                                                               |
@@ -541,8 +544,11 @@
 | LMC X-2                 | LMXB-NS          | 40501004002 | SN1987A                | 58983   |  183446    |  83.766  | -69.2728 | Unknown on both                                                      |
 | LMC X-2                 | LMXB-NS          | 40501004004 | SN1987A                | 58996.4 |  159322    |  83.7612 | -69.2682 | LMC SL                                                               |
 | LMC X-2                 | LMXB-NS          | 40501004004 | SN1987A                | 58996.4 |  159322    |  83.7612 | -69.2682 | LMC sources                                                          |
+| Coma                    | Cluster          | 60001030002 | PG1247p268             | 56995.4 |   94175.9  | 192.562  |  26.5285 | Tentatively Coma Cluster hard to tell                                |
+| SMC X-1                 | HMXB-NS          | 60301029006 | IRAS_00521m7054        | 58074.7 |   74410.9  |  13.4977 | -70.6667 | Unidentified SL on A (SMC?), second point source                     |
 | MAXI J1621              | LMXB-NS          | 80401321002 | 4U_1608m52             | 58311.9 |   53741.5  | 243.174  | -52.464  | Unident source in both                                               |
 | MAXI J1621              | LMXB-NS          | 80401321002 | 4U_1608m52             | 58311.9 |   53741.5  | 243.174  | -52.464  | Unident source in both                                               |
+| GX 9+1                  | LMXB-NS          | 80402320002 | SGR_1806m20            | 58409.8 |   39917.1  | 272.137  | -20.4465 | Multiple, whole FoV, unident                                         |
 | Cir X-1                 | LMXB-NS          | 90501314002 | MAXI_J1535m571         | 58587.5 |   52710.9  | 233.884  | -57.2154 | Strong SL (some in A), unidentified                                  |
 | Cir X-1                 | LMXB-NS          | 90501314002 | MAXI_J1535m571         | 58587.5 |   52710.9  | 233.884  | -57.2154 | Strong SL (some in A), unidentified                                  |
 | X1908+075               | HMXB-NS          | 30002041002 | SS433                  | 56934.1 |   26728.4  | 287.947  |   4.963  | SL on B                                                              |
