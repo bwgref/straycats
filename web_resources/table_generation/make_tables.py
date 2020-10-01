@@ -9,7 +9,7 @@ df.columns
 
 # Strip out unknowns:
 sl = df[df['Classification']=='SL'].copy().reset_index(drop=True)
-sl = sl.drop(['END_TIME', 'Multi', 'Module', 'Classification'], axis=1)
+sl = sl.drop(['END_TIME', 'Multi', 'Classification'], axis=1)
 
 # Get unique number of seqid rows:
 
@@ -32,7 +32,7 @@ with open('straycats_table.html', 'w') as f:
 # Same thing, but only unknowns
 
 sl = df[df['Classification']=='Unkn'].copy().reset_index(drop=True)
-sl = sl.drop(['END_TIME', 'Multi', 'Module', 'Classification'], axis=1)
+sl = sl.drop(['END_TIME', 'Multi', 'Classification'], axis=1)
 
 # Get unique number of seqid rows:
 

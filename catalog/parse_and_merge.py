@@ -109,7 +109,7 @@ for seq in count.keys():
     
 # Alpha sort on SL target name:
 
-df2.sort_values(by=['SL Target'], axis=0, inplace=True)
+df2.sort_values(by=['SL Target', 'TIME', 'Module'], axis=0, inplace=True)
 
 # Convert back to a FITS table and write this out
 tab = Table.from_pandas(df2)
