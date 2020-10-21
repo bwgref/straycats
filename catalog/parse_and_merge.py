@@ -4,11 +4,11 @@ from astropy.table import Table
 from astropy.io.fits import getdata
 from astropy.time import Time
 from astropy.io import fits
+import sys
 
 # Read base CSV from the Google drive
 
 df = pd.read_csv('csv/full_merged.csv')
-df.head()
 
 # Greenlist the columns that we want
 greenlist = ['SL Target', 'SEQID', 'Module', 'Primary Target', 'Exposure (s)', 'RA',
@@ -21,6 +21,11 @@ for col in df.columns:
 df = df.dropna(subset=['SL Target'])
 
 df = df.rename(columns={"Exposure (s)": "Exposure"})
+
+df['SL Target'] = df['SL Target'].str.strip()
+
+
+
 
 # Add the MJD start/stop from numaster and figure out if you're public or not
 
@@ -39,7 +44,6 @@ for col in dn.columns:
         dn.drop(col, axis=1, inplace=True)
 
 dn['OBSID'] = pd.to_numeric(dn['OBSID'])
-dn.columns
 
 dn['PUBLIC'] = np.where((dn['PUBLIC_DATE']<cutoff_mjd)&(dn['PUBLIC_DATE'] > 0), 'yes', 'no')
 
@@ -55,7 +59,7 @@ for si in np.unique(df['SEQID']):
 #    print(dn.loc[dn['OBSID'] == si, 'TIME'].values[0])
     df.loc[df['SEQID'] == si, 'TIME'] = dn.loc[dn['OBSID'] == si, 'TIME'].values[0]
     df.loc[df['SEQID'] == si, 'END_TIME'] = dn.loc[dn['OBSID'] == si, 'END_TIME'].values[0]
-
+#sys.exit()
 
 # Collate in the object type information
 obj_type = pd.read_csv('csv/target_info.csv')
