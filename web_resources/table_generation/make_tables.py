@@ -9,7 +9,8 @@ df.columns
 
 # Strip out unknowns:
 sl = df[df['Classification']=='SL'].copy().reset_index(drop=True)
-sl = sl.drop(['END_TIME', 'Multi', 'Classification'], axis=1)
+sl = df.copy()
+sl = sl.drop(['END_TIME', 'Multi'], axis=1)
 
 # Get unique number of seqid rows:
 
