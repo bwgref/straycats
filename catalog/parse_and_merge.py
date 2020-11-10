@@ -29,6 +29,8 @@ df = df.dropna(subset=['SL Target'])
 df = df.rename(columns={"Exposure (s)": "Exposure"})
 
 df['SL Target'] = df['SL Target'].str.strip()
+df['RA'] = pd.to_numeric(df['RA'])
+df['DEC'] = pd.to_numeric(df['DEC'])
 
 # Add the MJD start/stop from numaster and figure out if you're public or not
 

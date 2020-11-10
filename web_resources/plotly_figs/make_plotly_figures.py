@@ -22,40 +22,51 @@ df = straycat.to_pandas()
 # 
 # 
 # # Create galactic coordinates:
-ra = df['RA'].values
-dec = df['DEC'].values
+ra = df['RA_PRIMARY'].values
+dec = df['DEC_PRIMARY'].values
+
 coords = SkyCoord(ra, dec, unit = 'deg')
+
+
 # Create galactic coordiantes:
-ra = df['RA'].values
-dec = df['DEC'].values
 df['GalLon']= coords.galactic.l.deg
 df['GalLat']= coords.galactic.b.deg
 # 
 # # Get the location of the SL targets
-ra = []
-dec = []
-gal_lat = []
-gal_lon =[]
-names = []
-sl = df[df['Classification'] == 'SL'].copy().reset_index(drop=True)
-targets = sl['SL Target'].unique()
-for target in targets:
+sl = df.loc[df['DEC_SL']> -90]
+ra_sl = sl['RA_SL'].values
+dec_sl = sl['DEC_SL'].values
+sl_coords = SkyCoord(ra_sl, dec_sl, unit = 'deg')
+gal_lat = sl_coords.galactic.b.deg
+gal_lon = sl_coords.galactic.l.deg
+names = sl['SL Source']
 
-    result_table = Simbad.query_object(target)
-    if result_table is None:
-        continue
-    ra_tab = result_table['RA'].data.data[0]
-    dec_tab = result_table['DEC'].data.data[0]
-    coord = SkyCoord(ra_tab, dec_tab, unit=(u.hourangle, u.deg))
-    
-    ra = np.append(ra, coord.ra.deg)
-    dec = np.append(dec, coord.dec.deg)
-    gal_lat = np.append(gal_lat, coord.galactic.b.deg)
-    gal_lon = np.append(gal_lon, coord.galactic.l.deg)
-    names = np.append(names, target)
- 
 
-hover_list = ['SEQID','SL Target', 'Primary Target', 'TIME','Exposure', 'Classification', 'Notes']
+
+# ra = []
+# dec = []
+# gal_lat = []
+# gal_lon =[]
+# names = []
+# sl = df[df['Classification'] == 'SL'].copy().reset_index(drop=True)
+# targets = sl['SL Target'].unique()
+# for target in targets:
+# 
+#     result_table = Simbad.query_object(target)
+#     if result_table is None:
+#         continue
+#     ra_tab = result_table['RA'].data.data[0]
+#     dec_tab = result_table['DEC'].data.data[0]
+#     coord = SkyCoord(ra_tab, dec_tab, unit=(u.hourangle, u.deg))
+#     
+#     ra = np.append(ra, coord.ra.deg)
+#     dec = np.append(dec, coord.dec.deg)
+#     gal_lat = np.append(gal_lat, coord.galactic.b.deg)
+#     gal_lon = np.append(gal_lon, coord.galactic.l.deg)
+#     names = np.append(names, target)
+#  
+
+hover_list = ['SEQID','SL Source', 'Primary', 'TIME','Exposure', 'Classification']
 
 
 ######
@@ -66,7 +77,7 @@ df['PlotLon'] = (df['GalLon'] + 180)%360 - 180
 fig = px.scatter(df, x='PlotLon', y='GalLat'
                  ,size='Exposure'
                   , hover_data=hover_list
-                  ,color= 'Target Type')
+                  ,color= 'SL Type')
 
 fig.add_trace(go.Scatter(x=( (gal_lon + 180)%360-180), y= gal_lat,
                     mode='markers',
@@ -81,11 +92,11 @@ pio.write_html(fig, file='straycat_galactic.html')
 # ######
 # ## Do the RA/DEC one: ##
 # ######
-fig = px.scatter(df, x='RA', y='DEC'
+fig = px.scatter(df, x='RA_PRIMARY', y='DEC_PRIMARY'
                  ,size='Exposure'
                   , hover_data=hover_list
-                  ,color= 'Target Type')
-fig.add_trace(go.Scatter(x=ra, y= dec,
+                  ,color= 'SL Type')
+fig.add_trace(go.Scatter(x=ra_sl, y= dec_sl,
                     mode='markers',
                     name='SL Sources',
                     text=names, marker_symbol='x'))
@@ -117,7 +128,7 @@ df['y'] = scaley
 fig = px.scatter(df, x='x', y='y'
                  ,size='Exposure'
                   , hover_data=hover_list
-                  ,color= 'Target Type', opacity=0.8)
+                  ,color= 'SL Type', opacity=0.8)
                   
                   
 fig.update_xaxes(
