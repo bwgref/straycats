@@ -6,6 +6,9 @@
 
 ## An HTML version of the table for unidentified SL sources is [here](tables/straycats_table_unknowns)
 
+## An HTML version of the table for Complex SL sources is [here](tables/straycats_table_complex)
+
+
 ### The columns of the FITS file are:
 
 1. Classification
