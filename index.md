@@ -4,7 +4,7 @@
 
 ## An HTML version of the table can be found [here](tables/straycats_table) for all rows
 
-## An HTML version of the table can be found [here](tables/straycats_table_sorted) for all rows
+## An HTML version of the table can be found [here](tables/straycats_table_sorted) for all identified sources (sorted by the RA of the stray light source)
 
 ## An HTML version of the table for unidentified SL sources is [here](tables/straycats_table_unknowns)
 
