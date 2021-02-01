@@ -3,5 +3,8 @@ Code to make various interactive plots for the gh-pages branch
 Make them here and then copy them into the straycats_web branch so that they show
 up on the web page.
 
+Note that the jupyter notebook versions are all out of date. Just use the make_tables.py script,
+which also has the benefit of making the links for the NuSTARStrayCats github rather than bwgref
+
 
 
