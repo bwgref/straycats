@@ -2,7 +2,9 @@
 
 ## The current version of the FITS table can be found [here](tables/straycats.fits)
 
-## An HTML version of the table can be found [here](tables/straycats_table) for known SL sources
+## An HTML version of the table can be found [here](tables/straycats_table) for all rows
+
+## An HTML version of the table can be found [here](tables/straycats_table_sorted) for all rows
 
 ## An HTML version of the table for unidentified SL sources is [here](tables/straycats_table_unknowns)
 
@@ -11,7 +13,11 @@
 
 ### The columns of the FITS file are:
 
-1. Classification
+1. StrayID:
+
+    The Catalog identifier, which is StrayCatsI_XX where XX is the row number after the catalog is sorted the RA and Dec for the focused NuSTAR sequence ID.
+
+2. Classification
 
    The classifications are:
    1. 'SL': Identified stray light source
@@ -19,41 +25,50 @@
    3. 'Faint': Potential faint stray light
    4. 'GR': Ghost-rays from a source just outside of the FoV
    5. 'Unkn': Stray light from an unidentified source
-  
-2. SL Target
-
-    The name of the SL target.
 
 3. SEQID
 
-    The sequence ID for the NuSTAR observation where SL was observed. If a SL Target is observed in multiple sequence IDs then there are multiple rows in the table for that sequence ID.
-
+    The NuSTAR sequence ID
+    
 4. Module
 
-    The module in which SL was observed. Either A or B. If both A and B then there are multiple rows for that sequence ID.
+    The NuSTAR FPM that contains the stray light (A or B)
+    
+5. Exposure
 
-5. Exposure (s)
+    The exposure time for this observation in seconds
+    
+6. Multi (FITS only)
 
-    The exposure time in seconds for that observation
+    Whether the sequence ID contains multiple stray light patterns (Yes/No) 
 
-6. RA / Dec
+7. Primary
 
-    The RA / Dec for the *targeted* observation (i.e., not the SL Target)
+    Primary Target
 
-7. TIME / END_TIME
+8. Time
 
-    The MJD start / end time of the observation
+    MJD time of the observation
+    
+9. RA / DEC of the Primary
 
-8. Notes
+10. SL Source
 
-    Any notes for the SL observation (probably to be removed at some point).
+    If identified, otherwise ??
+    
+11. SL Type
 
---- 
+    If we have identified the type of the object, this will be here
+    
+12. SIMAD_ID
 
-### Update plan
+    ID for the source in SIMBAD
+    
+13. RA/Dec of SL source
 
-The Google docs will remain the underlying source of the information. So as we identify more of the unidentified SL sources we'll update those tables, dump them to CSV files, and then regenrated the FITS version of the catalog.
-
+    If known. Otherwise -999
+    
+    
 --- 
 
 ## Sky distribution of SL sources
