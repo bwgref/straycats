@@ -1,10 +1,12 @@
+![Logo](straycats_logo_title.png)
+
 # StrayCats: The *NuSTAR* Straylight source Catalog
 
 ## Usage:
 
 The StrayCats paper has now been accepted into ApJ! You can find a [preprint here](https://arxiv.org/abs/2102.01236).
 
-The [arXiv ADS](https://ui.adsabs.harvard.edu/abs/2021arXiv210201236G/abstract) is availbel, which we'll udpate here once the paper appears in ApJ. If you find the StrayCats data useful, please cite our paper and/or get in touch!
+The [arXiv ADS](https://ui.adsabs.harvard.edu/abs/2021arXiv210201236G/abstract) is available, which we'll udpate here once the paper appears in ApJ. If you find the StrayCats data useful, please cite our paper and/or get in touch!
 
 ## The current version of the FITS table can be found [here](tables/straycats.fits)
 
