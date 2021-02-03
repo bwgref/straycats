@@ -1,4 +1,4 @@
-![Logo](straycats_log_title.jpeg)
+![Logo](straycats_logo_title.png)
 
 # StrayCats: The *NuSTAR* Straylight source Catalog
 
