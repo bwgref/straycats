@@ -1,4 +1,4 @@
-![Logo](straycats_logo_title.png)
+![Logo](https://github.com/NuSTARStrayCats/straycats/blob/gh-pages/straycats_logo4by3_title.png)
 
 # StrayCats: The *NuSTAR* Straylight source Catalog
 
