@@ -4,9 +4,7 @@
 
 ## Usage:
 
-The StrayCats paper has now been accepted into ApJ! You can find a [preprint here](https://arxiv.org/abs/2102.01236).
-
-The [arXiv ADS](https://ui.adsabs.harvard.edu/abs/2021arXiv210201236G/abstract) is available, which we'll udpate here once the paper appears in ApJ. If you find the StrayCats data useful, please cite our paper and/or get in touch!
+The StrayCats paper has been published into ApJ! Please use the [ADS entry for the paper](https://ui.adsabs.harvard.edu/abs/2021ApJ...909...30G/abstract) to find published version (which includes the FITS table provided here) and the arXiv preprint. If you find the StrayCats data useful, please cite our paper and/or get in touch!
 
 ## The current version of the FITS table can be found [here](tables/straycats.fits)
 
