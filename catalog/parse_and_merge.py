@@ -109,7 +109,7 @@ for target, ttype in zip(obj_type['SL Target'], obj_type['Type']):
 df2.loc[df2['SL Target'] == '??', 'Classification'] = 'Unk'
 ## Reset SL Targets to ?? here for each class of object where things aren't clear:
 
-for id in ['Unkn', 'Complex', 'Faint', 'GR']:
+for id in ['Unkn', 'Complex', 'Faint', 'GR', 'Duplicate']:
     df2.loc[df2['SL Target'] == id, 'Classification'] = id
     df2.loc[df2['SL Target'] == id, 'SL Target'] = '??'
 
