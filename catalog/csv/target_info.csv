@@ -1,6 +1,8 @@
 SL Target,Type,Notes,,,,,Type Key,
 1RXSJ180408.9-342058   ,LMXB-NS,,,,,,AGN,
+1A 0535+262,HMXB-NS,Atoll,,,,,,
 2MASX J09172716-6456271,AGN,,,,,,HMXB-BH,High Mass X-ray Binary with BH compact object
+2S 0918-549,LMXB-NS,,,,,,,
 3C 273,AGN,,,,,,HMXB-NS,High Mass X-ray Binary with NS compact object
 4U 0614+091,LMXB-NS,UCXB,,,,,HMXB,"High Mass X-ray Binary, unknown compact object"
 4U 1323-619,LMXB-NS,dipping and bursting,,,,,LMXB-BH,Low Mass X-ray Binary with BH compact object
@@ -45,6 +47,7 @@ GX 354+0,LMXB-NS,"a.k.a. 4U 1728-34, Type 1 X-ray bursts",,,,,,
 GX 5-1,LMXB-NS,Z-track,,,,,,
 GX 9+1,LMXB-NS,Atoll,,,,,,
 GX 9+9,LMXB-NS,Atoll,,,,,,
+GX 339-4,LMXB-BH,,,,,,,
 H1417-624,HMXB-NS,"Be X-ray binary, outburst in 2019, 17.54 s, 42 day period",,,,,,
 H1705-440 ,LMXB-NS,Atoll but DUPLICATE WITH 4U 1705-44,,,,,,
 IC 4329A,AGN,,,,,,,
