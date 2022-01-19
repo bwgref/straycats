@@ -1,5 +1,5 @@
 from astropy.table import Table
-sf = '../../catalog/fits/straycats.fits'
+sf = '../../straycats.fits'
 straycat = Table.read(sf)
 for key in straycat.columns:
     if straycat[key].dtype.str.startswith('|S'):
