@@ -3,3 +3,4 @@ local
 # MacOS
 
 *.DS_Store
+*.ipynb*
