@@ -2,19 +2,44 @@
 
 # StrayCats: The *NuSTAR* Straylight source Catalog
 
-## Usage:
+## Usage 
 
 The StrayCats paper has been published into ApJ! Please use the [ADS entry for the paper](https://ui.adsabs.harvard.edu/abs/2021ApJ...909...30G/abstract) to find published version (which includes the FITS table provided here) and the arXiv preprint. If you find the StrayCats data useful, please cite our paper and/or get in touch!
 
-## The current version of the FITS table can be found [here](tables/straycats.fits)
+## Science Papers that use stray light data:
+
+["Measurement of the Absolute Crab Flux with NuSTAR"", Madsen et al. (2017)](https://ui.adsabs.harvard.edu/abs/2017ApJ...841...56M/abstract)
+
+["StrayCats: A Catalog of NuSTAR Stray Light Observations", Grefenstette et al. (2021)](https://ui.adsabs.harvard.edu/abs/2021ApJ...909...30G/abstract)
+
+["Extending the Baseline for SMC X-1's Spin and Orbital Behavior with NuSTAR Stray Light", Brumback et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022ApJ...926..187B/abstract)
+
+<!-- 
+## Summer Undergraduate Research Fellowships based on stray light data:
+
+["Analyzing Straylight X-ray Binaries with NuSTAR", Catherine Slaughter (2020)](pdfs/)
+
+ -->
+
+
+## An HTML version of the table can be found [here](tables/straycats_sorted_table) for all identified sources (sorted by the RA of the stray light source)
 
 ## An HTML version of the table can be found [here](tables/straycats_table) for all rows
 
-## An HTML version of the table can be found [here](tables/straycats_sorted_table) for all identified sources (sorted by the RA of the stray light source)
+## The current version of the FITS table can be found [here](tables/straycats.fits)
 
 ## An HTML version of the table for unidentified SL sources is [here](tables/straycats_table_unknowns)
 
 ## An HTML version of the table for Complex SL sources is [here](tables/straycats_table_complex)
+
+## Sky distribution of SL sources
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://NuSTARStrayCats.github.io/straycats/plotly_figs/straycat_radec.html" height="540" width="960"></iframe>
+--- 
+
+## Galactic distribution of SL sources. Underlying image is the [ESO Milky Way panorama](https://www.eso.org/public/images/eso0932a/)
+### Use the 'Zoom' tool to manipulate this image rather than the "Box Select" tool.
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://NuSTARStrayCats.github.io/straycats/plotly_figs/galaxy_overlay.html" height="540"  width="960"></iframe>
 
 
 ### The columns of the FITS file are:
@@ -77,12 +102,4 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
     
 --- 
 
-## Sky distribution of SL sources
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://NuSTARStrayCats.github.io/straycats/plotly_figs/straycat_radec.html" height="540" width="960"></iframe>
---- 
-
-## Galactic distribution of SL sources. Underlying image is the [ESO Milky Way panorama](https://www.eso.org/public/images/eso0932a/)
-### Use the 'Zoom' tool to manipulate this image rather than the "Box Select" tool.
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://NuSTARStrayCats.github.io/straycats/plotly_figs/galaxy_overlay.html" height="540"  width="960"></iframe>
 
