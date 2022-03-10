@@ -2,9 +2,9 @@
 
 # StrayCats: The *NuSTAR* Stray Light Source Catalog
 
-## Usage 
+## Usage and Citations
 
-The StrayCats paper has been published into ApJ! Please use the [ADS entry for the paper](https://ui.adsabs.harvard.edu/abs/2021ApJ...909...30G/abstract) to find published version (which includes the FITS table provided here) and the arXiv preprint. If you find the StrayCats data useful, please cite our paper and/or get in touch!
+The StrayCats paper has been published into ApJ! Please use the [ADS entry for the paper](https://ui.adsabs.harvard.edu/abs/2021ApJ...909...30G/abstract) to find published version (which includes the FITS table provided here) and the arXiv preprint. If you find the StrayCats catalog useful, please cite our paper and/or get in touch!
 
 ---
 
@@ -28,15 +28,15 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
 ## Catalog Links
 
-- An HTML version of the table can be found [here](tables/straycats_sorted_table) for all identified sources (sorted by the RA of the stray light source)
+- [HTML version of StrayCats Catalog sorted by RA of the Stray Light Source](tables/straycats_sorted_table)
 
-- An HTML version of the table can be found [here](tables/straycats_table) for all rows
+- [HTML version of the complete StrayCats Catalog](tables/straycats_table)
 
-- The current version of the FITS table can be found [here](tables/straycats.fits)
+- [Unidentified Stray Light Sources](tables/straycats_table_unknowns)
 
-- An HTML version of the table for unidentified SL sources is [here](tables/straycats_table_unknowns)
+- ["Complex" Stray Light Sources](tables/straycats_table_complex)
 
-- An HTML version of the table for Complex SL sources is [here](tables/straycats_table_complex)
+- [FITS version of the StrayCats Catalog](tables/straycats.fits)
 
 ---
 
