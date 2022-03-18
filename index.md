@@ -26,6 +26,12 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
 ---
 
+## Posters on StrayCats
+
+- ["StrayCats: A catalog of NuSTAR Stray Light Observations", Brian Grefenstette at HEAD19 (2022)](web_resources/pdfs/grefenstette_HEAD19_poster.pdf)
+
+---
+
 ## Catalog Links
 
 - [HTML version of StrayCats Catalog sorted by RA of the Stray Light Source](tables/straycats_sorted_table)
