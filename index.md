@@ -24,11 +24,15 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
 - ["GS 1826-24 with NuSTAR Stray Light ", Hazel Yun (2021)](web_resources/pdfs/surf_2021_yun.pdf)
 
+- ["Stray Light View of Accreting Atolls: GX 9+9", Lynn Yang (2021)](web_resources/pdfs/surf_2021_yang.pdf)
+
 ---
 
 ## Posters on StrayCats
 
 - ["StrayCats: A catalog of NuSTAR Stray Light Observations", Brian Grefenstette at HEAD19 (2022)](web_resources/pdfs/grefenstette_HEAD19_poster.pdf)
+
+- ["Extending the baseline for SMC X-1’s spin and orbital behavior with NuSTAR stray light", McKinley Brumback at HEAD19 (2022)](web_resources/pdfs/Brumback_HEAD19poster_withQRcode.pdf)
 
 ---
 
