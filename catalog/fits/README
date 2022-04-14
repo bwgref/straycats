@@ -1,0 +1,25 @@
+straycats.fits - v1.0 original file from csv
+
+straycats_v2.fits - updates version v1.1 for release through December 31, 2021
+
+straycats_v2_incr2.fits - Renee's updates, noted below
+
+Classifications and names changed in the straycats.fits file: 
+    StrayCatsI_45-58: 'SL' -----> 'GR'
+    StrayCatsI_516 == StrayCatsI_517 ---- StrayCatsI_517: 'SL' ---> 'Duplicate'
+    StrayCatsI_600: GX 3+1 ---> GX 13+1 
+    StrayCatsI_601: 'SL' -----> 'Duplicate'
+    StrayCatsI_604: GX 3+1 ---> GX 13+1 
+    StrayCatsI_704 == StrayCatsI_705 ------  StrayCatsI_705: 'SL' ---> 'Duplicate'
+    StrayCatsII 30-33: SL ---> Complex
+
+SL Types updated in the fits files:
+    XTE J1701-407: LMXB-NS
+    Rapid Burster: LMXB-NS
+    LMC X-4: HMXB-NS
+    1RXS J180408: LMXB-NS
+    LMC X-1: HMXB-BH
+    SLX 1735-269: LMXB-NS
+    IGR J17511-3057: LMXB-NS
+    4U 1907+097: HMXB-NS
+    4U 1624-490: Eclipsing Pulsar -----> LMXB-NS
