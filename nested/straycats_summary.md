@@ -1,5 +1,5 @@
 ---
-permalink: "/nested/"
+permalink: "/nested/straycats_summary.html"
 layout: page
 title:  "Summary"
 ---
