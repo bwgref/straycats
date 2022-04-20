@@ -1,3 +1,9 @@
+---
+permalink: "/nested/"
+layout: page
+title:  "Summary"
+---
+
 # Markdown versions
 
 |    | SL Source                                                                                        | SL Type      |    RA_SL |    DEC_SL | Number of Obs   | sname                  |
