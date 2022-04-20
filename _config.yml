@@ -1,3 +1,4 @@
 theme: jekyll-theme-dinky
 markdown: GFM
 include: ['nested']
+relative_permalinks: false
