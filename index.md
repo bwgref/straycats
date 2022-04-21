@@ -123,6 +123,5 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
     If known. Otherwise -999
     
-    
 --- 
 
