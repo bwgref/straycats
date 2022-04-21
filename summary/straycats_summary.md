@@ -1,6 +1,6 @@
 | SL Source                                                                                        | SL Type      |    RA_SL |    DEC_SL |   Number of Obs |
 |:-------------------------------------------------------------------------------------------------|:-------------|---------:|----------:|----------------:|
-| <a href=SMCX-3/SMCX-3_summary.html > SMCX-3 </a>                                                 | HMXB-NS      |  13.0234 | -72.4345  |               1 |
+| [SMC X-3](SMCX-3/SMCX-3_summary.html)                                               | HMXB-NS      |  13.0234 | -72.4345  |               1 |
 | <a href=RXJ0053.8-7226/RXJ0053.8-7226_summary.html > RXJ0053.8-7226 </a>                         | HMXB-NS      |  13.4799 | -72.4458  |               3 |
 | <a href=SMCX-1/SMCX-1_summary.html > SMCX-1 </a>                                                 | HMXB-NS      |  19.2714 | -73.4433  |               8 |
 | <a href=NGC1275/NGC1275_summary.html > NGC1275 </a>                                              | AGN          |  49.9507 |  41.5117  |               4 |
