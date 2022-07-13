@@ -70,8 +70,7 @@ for source in np.unique(uniq_sl['SL Source']):
 #     for key in this_src.columns:
 #         if key in summary_redlist:
 #             this_src = this_src.drop(key, axis=1).reset_index(drop=True)
-
-    this_src['SEQID'] = [f'<a href="{seqid_base}/{seqid}" >{seqid} </a>' for seqid in this_src['SEQID']]    
+    this_src['SEQID'] = [f'<a href="{sname}/{sname}_{seqid}{mod}.html" >{seqid} </a>' for seqid,mod in zip(this_src['SEQID'], this_src['Module'])]
 
     for reg in this_src['Region']:
         rfile = os.path.join('./SL_regions', f'{reg}.reg')
@@ -113,7 +112,8 @@ for source in np.unique(uniq_sl['SL Source']):
         f.write('<center>\n')
         if no_lc:
             f.write(f'<h2> Lightcurve not available </h2>\n')
-        f.write(f'<embed src={lc_file} width="600pix" height="460pix" class="center"/>\n')
+        else:
+            f.write(f'<embed src={lc_file} width="600pix" height="460pix" class="center"/>\n')
 #        f.write(f'<img src={lc_file}  width="100%" height="460pix" class="center"/>\n')
 
         f.write('<p>\n')
