@@ -70,7 +70,7 @@ for source in np.unique(uniq_sl['SL Source']):
 #     for key in this_src.columns:
 #         if key in summary_redlist:
 #             this_src = this_src.drop(key, axis=1).reset_index(drop=True)
-    this_src['SEQID'] = [f'<a href="{sname}/{sname}_{seqid}{mod}.html" >{seqid} </a>' for seqid,mod in zip(this_src['SEQID'], this_src['Module'])]
+    this_src['SEQID'] = [f'<a href="{sname}_{seqid}{mod}.html" >{seqid} </a>' for seqid,mod in zip(this_src['SEQID'], this_src['Module'])]
 
     for reg in this_src['Region']:
         rfile = os.path.join('./SL_regions', f'{reg}.reg')
@@ -153,8 +153,8 @@ uniq_sl = uniq_sl.drop(['sname'], axis=1).reset_index(drop=True)
 sl_md = uniq_sl.to_markdown('straycats_summary.md', index=False)
 
 
-uniq_sl.to_html('straycats_summary.html', index=False, escape=False,
-    classes=["table-bordered", "table-striped", "table-hover"])
+#uniq_sl.to_html('straycats_summary.html', index=False, escape=False,
+#    classes=["table-bordered", "table-striped", "table-hover"])
 
 # 
 # with open('straycats_summary.md', 'w') as f:
