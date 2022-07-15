@@ -8,6 +8,8 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
 ---
 
+## [StrayCats Summary Table for all Sources with Products](summary2/straycats_summary)
+
 ## [StrayCats Summary Table for all Sources](summary/straycats_summary)
 
 ---
