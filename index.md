@@ -22,6 +22,8 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
 - ["Extending the Baseline for SMC X-1's Spin and Orbital Behavior with NuSTAR Stray Light", Brumback et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022ApJ...926..187B/abstract)
 
+- ["StrayCats II: An Updated Catalog of NuSTAR Stray Light Observations", Ludlam et al. (in press)](https://ui.adsabs.harvard.edu/abs/2022arXiv220609930L/abstract)
+
 ---
 
 ## Summer Undergraduate Research Fellowships based on Stray Light data:
@@ -31,7 +33,6 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 - ["GS 1826-24 with NuSTAR Stray Light ", Hazel Yun (2021)](web_resources/pdfs/surf_2021_yun.pdf)
 
 - ["Stray Light View of Accreting Atolls: GX 9+9", Lynn Yang (2021)](web_resources/pdfs/surf_2021_yang.pdf)
-
 ---
 
 ## Posters on StrayCats
@@ -39,6 +40,8 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 - ["StrayCats: A catalog of NuSTAR Stray Light Observations", Brian Grefenstette at HEAD19 (2022)](web_resources/pdfs/grefenstette_HEAD19_poster.pdf)
 
 - ["Extending the baseline for SMC X-1’s spin and orbital behavior with NuSTAR stray light", McKinley Brumback at HEAD19 (2022)](web_resources/pdfs/Brumback_HEAD19poster_withQRcode.pdf)
+
+- ["StrayCats II: A catalog of NuSTAR Stray Light Observations", Brian Grefenstette at NuSTAR 2022"](https://zenodo.org/record/6668702#.Yt6-bC-B3T8)
 
 ---
 
