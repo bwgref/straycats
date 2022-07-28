@@ -22,7 +22,7 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
 - ["Extending the Baseline for SMC X-1's Spin and Orbital Behavior with NuSTAR Stray Light", Brumback et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022ApJ...926..187B/abstract)
 
-- ["StrayCats II: An Updated Catalog of NuSTAR Stray Light Observations", Ludlam et al. (in press)](https://ui.adsabs.harvard.edu/abs/2022arXiv220609930L/abstract)
+- ["StrayCats II: An Updated Catalog of NuSTAR Stray Light Observations", Ludlam et al. (2022)](https://doi.org/10.3847/1538-4357/ac7b27)
 
 ---
 
