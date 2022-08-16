@@ -28,11 +28,14 @@ The StrayCats paper has been published into ApJ! Please use the [ADS entry for t
 
 ## Summer Undergraduate Research Fellowships based on Stray Light data:
 
-- ["Analyzing Straylight X-ray Binaries with NuSTAR", Catherine Slaughter (2020)](web_resources/pdfs/surf_2020_slaughter.pdf)
+- ["The Long Term Analysis of GS 1826-24 using StrayCats", Hazel Yun (2022)](web_resources/pdfs/surf_2022_yun.pdf)
 
 - ["GS 1826-24 with NuSTAR Stray Light ", Hazel Yun (2021)](web_resources/pdfs/surf_2021_yun.pdf)
 
 - ["Stray Light View of Accreting Atolls: GX 9+9", Lynn Yang (2021)](web_resources/pdfs/surf_2021_yang.pdf)
+
+- ["Analyzing Straylight X-ray Binaries with NuSTAR", Catherine Slaughter (2020)](web_resources/pdfs/surf_2020_slaughter.pdf)
+
 ---
 
 ## Posters on StrayCats
