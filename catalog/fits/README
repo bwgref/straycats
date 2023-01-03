@@ -27,3 +27,4 @@ SL Types updated in the fits files:
 
 straycats_v3.fits is the full table with the new information added
 
+strayvats_v4.fits is the full table with updates to the unknowns. See ../updates_unkowns.py
