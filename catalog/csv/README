@@ -1,3 +1,46 @@
-CSV files are from here:
+Update:
 
-https://docs.google.com/spreadsheets/d/1bZMwgHAz102-Pr9Nhv5zCprz_GO1kmaOTDTH10qhCy8/edit#gid=1334964263
+CSV files are produced by hand by a jupyter notebook called 
+
+find_sl_diagnostic.ipynb
+
+For now, this lives on Box on Brian's account. This parses the output from
+
+loop_targets_observing.py
+
+which lives here:
+
+/disk/lif2/bwgref/science/straycats_v3
+
+Right now, this runs on bifrost and loops over all of the sequence IDs each year and
+computes the background rates in various combinations of detectors. These get dumped
+into output text files.
+
+The python notebook loads the text files and if things are sufficiently* (YMMV) far
+from the mean value for the year, it gets flagged by the notebook and dumped into
+a bunch of output text files.
+
+I merged those text files by hand. I visually inspect each observation using 
+plot_single_straylight_colorbar.py on bifrost (same location as above) and if
+I can pick out the SL then I use the nustar_stray_light checking tool in IDL 
+(available on GitHub, but I have it installed on ran).
+
+We basically have to type in the target name by hand, so we'll want to be careful
+about updating things as we go.
+
+Inventory:
+
+full_merged.csv
+full_merged_v0p1.csv 
+
+...are the original CSV files from 2020 with *all* of the data from early in the
+mission. These were orginally merged together on a Google Drive.
+
+straycats2_merged.csv is the one for the Ludlam et al paper in 2021
+
+straycats3_merged.csv is the early-2022 update
+
+
+
+
+
