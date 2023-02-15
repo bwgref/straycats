@@ -51,4 +51,4 @@ for row in df2.iterrows():
     
 
 tab = Table.from_pandas(df)
-tab.write('fits/straycats_v3.fits', overwrite=True)
+tab.write('fits/straycats_v2_1.fits', overwrite=True)

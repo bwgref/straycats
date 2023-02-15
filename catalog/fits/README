@@ -25,6 +25,5 @@ SL Types updated in the fits files:
     4U 1624-490: Eclipsing Pulsar -----> LMXB-NS
 
 
-straycats_v3.fits is the full table with the new information added
+straycats_v2.1.fits is the full table with the new information added
 
-strayvats_v4.fits is the full table with updates to the unknowns. See ../updates_unkowns.py

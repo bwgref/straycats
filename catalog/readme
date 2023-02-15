@@ -1,18 +1,46 @@
-First, download the table from the Google Drive into CSV files in the csv directory
+First, download the table from the Google Drive / Box into CSV files in the csv directory
+
+Update the README there.
 
 Second, grab the latest numaster.fits table and put it in the fits subdirectory
 
-Then just run python parse_and_merge.py which produces the straycats.fits file in the fits subdirectory
+The *first* version was created by parse_and_merge.py which produces the straycats.fits file in the fits subdirectory
 
-Have to run add_version2.py to add in the stuff from the second catalog run
+We then added more information to the full catalog.
 
-Then run add_renee_data.py to add in in the count rates. NA values are -999.0
+Naming Conventions
+------------------
 
-add_renee_data.py produced v3
+straycats_vX_0.fits:
+    Includes basic info that are based on parse_and_merge.py (initial run) and
+    add_versionX.py for future runs. This serves as the basis for the runs that Renee
+        does for producing the region files and the various products
+    
+    You'll want to make a new add_versionX.py script every time. Update the StrayID tag
+        on line 189 to update for your version.
+    
+    Latest version here is v3.0 (Updated by Brian in ~Feb 2023 for Jan 2022-Dec 2022)
+        for StrayCatsIII
+    
+straycats_incrX.fits:
+    Incremental update *just* including the new rows. This is useful for passing short
+        tables back and forth.
+ 
+    After this is complete, send off the FITS files to Renee for further processing
+ 
+straycats_vX_1.fits:
+    After you get the information back from Renee, we'll incorporate the updated
+        incremental update into the full catalog
+        
+        See add_renee_data_v2_1.py
 
 
 
-Update procedure:
+
+
+
+Workflow
+---------
 
 - Add new rows (StrayCats_XX) where XX is the update number
     Current version: II from Renee's paper
@@ -31,5 +59,7 @@ Update procedure:
 - Update source webpages
 - Push to website
 - Profit
+
+
 
 
