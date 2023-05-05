@@ -9,6 +9,7 @@ df.columns
 
 # Strip out unknowns:
 sl = df[df['Classification']=='SL'].copy().reset_index(drop=True)
+
 sl = df.copy()
 sl = sl.drop(['END_TIME', 'Multi'], axis=1)
 
@@ -45,7 +46,7 @@ with open('straycats_sorted_table.html', 'w') as f:
 
 
 
-# Same thing, but only unknowns
+# Same thing, but only unknowns and the streak
 
 sl = df[df['Classification']=='Unkn'].copy().reset_index(drop=True)
 sl = sl.drop(['END_TIME', 'Multi', 'Classification'], axis=1)
