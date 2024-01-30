@@ -37,8 +37,8 @@ df['DEC'] = pd.to_numeric(df['DEC'])
 
 # Add the MJD start/stop from numaster and figure out if you're public or not
 
-# Set the "public" cutoff date to be Jan 1, 2023
-cutoff_t = Time('2023-01-01T00:00:00.123456789', format='isot', scale='utc')
+# Set the "public" cutoff date to be Jan 1, 2024
+cutoff_t = Time('2024-01-01T00:00:00.123456789', format='isot', scale='utc')
 cutoff_mjd = cutoff_t.mjd
 
 numaster = Table.read('fits/numaster.fits', format = 'fits')
