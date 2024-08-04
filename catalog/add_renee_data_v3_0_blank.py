@@ -18,7 +18,7 @@ for key in sc2.columns:
         sc2[key] = sc2[key].astype('str') 
 df = sc2.to_pandas()
 df.columns
-meta2 = Table.read('fits/StrayCats_SLsources_3arcminbkg.fits')
+meta2 = Table.read('fits/straycats_v3_2.fits')
 
 for key in meta2.columns:
     if meta2[key].dtype.str.startswith('|S'):
@@ -45,9 +45,9 @@ for key in df2.columns:
             df[key] = newcol
             
 # We don't have the meta data yet, so don't copy this over
-# for row in df2.iterrows():
-#     for key in greenlist:
-#         df[key].loc[df['STRAYID'] == row[1]['StrayID']] = row[1][key]
+for row in df2.iterrows():
+    for key in greenlist:
+        df.loc[df['STRAYID'] == row[1]['StrayID'], key] = row[1][key]
 #     
 
 tab = Table.from_pandas(df)
