@@ -11,14 +11,14 @@ import astropy.units as u
 
 
 
-sc2 = Table.read('fits/straycats_incr3.fits', format = 'fits')
+sc2 = Table.read('fits/straycats_v2_incr2.fits', format = 'fits')
 
 for key in sc2.columns:
     if sc2[key].dtype.str.startswith('|S'):
         sc2[key] = sc2[key].astype('str') 
 df = sc2.to_pandas()
 df.columns
-meta2 = Table.read('fits/straycats_v3_2.fits')
+meta2 = Table.read('fits/StrayCats_SLsources_3arcminbkg.fits')
 
 for key in meta2.columns:
     if meta2[key].dtype.str.startswith('|S'):
@@ -44,11 +44,11 @@ for key in df2.columns:
             newcol = [-999.0 for x in range(rows)]
             df[key] = newcol
             
-# We don't have the meta data yet, so don't copy this over
+            
 for row in df2.iterrows():
     for key in greenlist:
-        df.loc[df['STRAYID'] == row[1]['StrayID'], key] = row[1][key]
-#     
+        df[key].loc[df['STRAYID'] == row[1]['StrayID']] = row[1][key]
+    
 
 tab = Table.from_pandas(df)
-tab.write('fits/straycats_incr3_0.fits', overwrite=True)
+tab.write('fits/straycats_v2_1.fits', overwrite=True)

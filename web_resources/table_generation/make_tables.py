@@ -21,7 +21,7 @@ uniq_sl = sl.copy()
 seqid_base = 'https://github.com/NuSTARStrayCats/straycats/tree/master/web_resources/seqid'
 source_base = 'https://github.com/NuSTARStrayCats/straycats/tree/master/web_resources/source'
 
-uniq_sl['SEQID'] = [f'<a href="{seqid_base}/{seqid}" >{seqid} </a>' for seqid in uniq_sl['SEQID']]
+uniq_sl['ObsID'] = [f'<a href="{seqid_base}/{seqid}" >{seqid} </a>' for seqid in uniq_sl['ObsID']]
 
 #sl['SL Target'] = [f'<a href="./sources/{source}" >{source} </a>' for source in sl['SL Target']]
 
@@ -61,7 +61,7 @@ source_base = 'https://github.com/NuSTARStrayCats/straycats/tree/master/web_reso
 
 
 
-uniq_sl['SEQID'] = [f'<a href="{seqid_base}/{seqid}" >{seqid} </a>' for seqid in uniq_sl['SEQID']]
+uniq_sl['ObsID'] = [f'<a href="{seqid_base}/{seqid}" >{seqid} </a>' for seqid in uniq_sl['ObsID']]
 
 #sl['SL Target'] = [f'<a href="./sources/{source}" >{source} </a>' for source in sl['SL Target']]
 
@@ -86,7 +86,7 @@ uniq_sl = sl.copy()
 seqid_base = 'https://github.com/NuSTARStrayCats/straycats/tree/master/web_resources/seqid'
 source_base = 'https://github.com/NuSTARStrayCats/straycats/tree/master/web_resources/source'
 
-uniq_sl['SEQID'] = [f'<a href="{seqid_base}/{seqid}" >{seqid} </a>' for seqid in uniq_sl['SEQID']]
+uniq_sl['ObsID'] = [f'<a href="{seqid_base}/{seqid}" >{seqid} </a>' for seqid in uniq_sl['ObsID']]
 
 #sl['SL Target'] = [f'<a href="./sources/{source}" >{source} </a>' for source in sl['SL Target']]
 
